@@ -41,7 +41,7 @@ st.markdown(
 st.sidebar.title('Sign Language Detection ')
 st.sidebar.subheader('-Parameter')
 
-@st.cache_data()
+# @st.cache_data()
 def image_resize(image, width=None, height=None, inter=cv2.INTER_AREA):
 
     dim = None
