@@ -132,7 +132,7 @@ elif app_mode == 'Sign Language to Text':
     fps_input = int(vid.get(cv2.CAP_PROP_FPS))
 
     codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-    out = cv2.VideoWriter('output1.mp4', codec, fps_input, (width, height))
+    # out = cv2.VideoWriter('output1.mp4', codec, fps_input, (width, height))
 
     st.markdown("<hr/>", unsafe_allow_html=True)
 
@@ -304,14 +304,14 @@ elif app_mode == 'Sign Language to Text':
             frame = image_resize(image=frame, width=640)
             stframe.image(frame, channels='BGR', use_column_width=True)
 
-    st.text('Video Processed')
+    # st.text('Video Processed')
 
-    output_video = open('output1.mp4', 'rb')
-    out_bytes = output_video.read()
-    st.video(out_bytes)
+    # output_video = open('output1.mp4', 'rb')
+    # out_bytes = output_video.read()
+    # st.video(out_bytes)
 
     vid.release()
-    out.release()
+    # out.release()
 else:
     st.title('Speech to Sign Language (The System use Indian Sign Language)')
     # initialize the speech recognition engine
