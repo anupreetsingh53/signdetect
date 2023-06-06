@@ -155,6 +155,8 @@ elif app_mode == 'Sign Language to Text':
     thumb_tip = 4
     while True:
         ret, img = vid.read()
+        if not ret:
+            break
         img = cv2.flip(img, 1)
         h, w, c = img.shape
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
