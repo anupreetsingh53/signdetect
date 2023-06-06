@@ -118,7 +118,7 @@ elif app_mode == 'Sign Language to Text':
 
     if not video_file_buffer:
         if use_webcam:
-            vid = cv2.VideoCapture(1)
+            vid = cv2.VideoCapture(0)
         else:
             vid = cv2.VideoCapture(DEMO_VIDEO)
             tfflie.name = DEMO_VIDEO
