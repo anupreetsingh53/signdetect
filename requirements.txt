@@ -1,4 +1,4 @@
-speech_recognition
+SpeechRecognition
 opencv-python
 temp
 streamlit
